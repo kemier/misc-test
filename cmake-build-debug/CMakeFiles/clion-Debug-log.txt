@@ -1,0 +1,31 @@
+/usr/local/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/opt/homebrew/opt/llvm/bin/clang -DCMAKE_C_COMPILER=/Users/zaedinzeng/CLionProjects/llvm-project/build/bin/clang -DCMAKE_CXX_COMPILER=/Users/zaedinzeng/CLionProjects/llvm-project/build/bin/clang++ -G "CodeBlocks - Unix Makefiles" -S /Users/zaedinzeng/CLionProjects/test -B /Users/zaedinzeng/CLionProjects/test/cmake-build-debug
+-- The C compiler identification is Clang 17.0.0
+-- The CXX compiler identification is Clang 17.0.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: /Users/zaedinzeng/CLionProjects/llvm-project/build/bin/clang
+-- Check for working C compiler: /Users/zaedinzeng/CLionProjects/llvm-project/build/bin/clang - broken
+CMake Error at /usr/local/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:67 (message):
+  The C compiler
+
+    "/Users/zaedinzeng/CLionProjects/llvm-project/build/bin/clang"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: /Users/zaedinzeng/CLionProjects/test/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-dwHIPc
+    
+    Run Build Command(s):/usr/local/bin/cmake -E env VERBOSE=1 /opt/homebrew/opt/llvm/bin/clang -f Makefile cmTC_f7f47/fast && clang-16: error: unknown argument: '-f'
+    clang-16: error: no such file or directory: 'cmTC_f7f47/fast'
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+
+-- Configuring incomplete, errors occurred!
